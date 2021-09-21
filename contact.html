@@ -1,0 +1,105 @@
+<!--This my personal cv website-->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Setting the charset -->
+	<meta charset="utf-8">
+	<!-- Importing some of the fonts to be used on the website -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Sacramento" rel="stylesheet">
+	<link rel="icon" href="favicon.ico">
+	<!-- Importing the bootstrap library -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Importing the bootstrap java script files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Importing the css style sheet or the css file -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/work.css">
+	<!-- Font awesome link -->
+	<link rel="stylesheet" type="text/css" href="images/font/flaticon.css">
+	<title>Ritik Ranjan</title>
+	<script type="js/styles.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<!-- This the wrapper class that will wrap the whole body except footer -->
+	<div class="wrapper">
+
+		<div class="navtheme container-fluid">
+		<!-- Navbar -->
+			<nav class="navbar navbar-expand-md navbar-dark">
+				<!-- Navbar brand image -->
+				<a href="index.html">
+					<img class="navbarBrand" src="images/siteBrand.png">
+				</a>
+				<!-- Navbar toggler button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- The list that is to be hidden when screen becomes small -->
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">						
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="myweb.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Navbar code ends here -->
+		
+			
+			<div class="theme">
+				<h1 id="work">Contact.</h1>
+				<img src="images/mountain.png">
+			</div>
+		</div>
+
+		<!-- Main body start here -->
+		<div class="mainContent">
+			<form action="./php/contact.php" method="post">
+				<div class="form-group">
+					<label for="fname">Name</label>
+			    	<input type="text" id="fname" name="name" placeholder="Your name..">
+				</div>
+				<div class="form-group">
+					<label for="lname">Email</label><br>
+			    	<input type="text" title="Please enter a valid email" id="lname" name="email" placeholder="Your email.." ><br>
+				</div>
+				<div class="form-group">
+					<label for="subject">Message</label>
+			    	<textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
+				</div>
+				<button type="submit" class="btn btn-req btn-outline-info btn-lg">Submit</button>
+			</form>				
+		</div>
+
+		<div class="footer">
+
+			<div class="container-fluid bottom-container">
+				<div class="row bottom-buttons">
+					<a class="col-4" href="https://www.linkedin.com/in/ritik-ranjan/">
+						<button type="button" class="btn btn-outline-info btn-lg"><i class="logos flaticon-linkedin-logo"></i>LinkedIn</button>
+					</a>
+					<a class="col-4" href="https://github.com/ritik-ranjan">
+						<button type="button" class="btn btn-outline-info btn-lg"><i class="logos flaticon-github"></i>Github</button>
+					</a>
+					<a class="col-4" href="myweb.html">
+						<button type="button" class="btn btn-outline-info btn-lg"><i class="logos flaticon-web"></i>Website</button>
+					</a>
+				</div>
+				<p id="copyright">© 2018 <a href="./myweb.html" id="copyright-link">Ritik Ranjan</a>. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
